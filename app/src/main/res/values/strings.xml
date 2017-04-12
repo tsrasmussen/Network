@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Network</string>
+    <string name="company_title">Global Network Solutions</string>
+    <string name="call_button">Call</string>
+    <string name="web_button">Web</string>
+    <string name="email_button">Email</string>
+    <string name="person_name">Tue Skau Rasmussen</string>
+    <string name="location">Google Street 3, Odense, Denmark</string>
+    <string name="slogan">Providing innovative solutions to fit your network needs</string>
+</resources>

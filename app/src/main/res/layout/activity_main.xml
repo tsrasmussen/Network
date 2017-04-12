@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/silverbackground"
+    android:fillViewport="true"
+    tools:context="com.example.android.network.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/companytitle"
+                style="@style/CompanyTitle"
+                android:text="@string/company_title" />
+
+            <ImageView
+                android:id="@+id/globalpng"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:src="@drawable/global" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="24dp">
+
+                <TextView
+                    style="@style/contact_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="10dp"
+                    android:drawableStart="@drawable/ic_person_black_24dp"
+                    android:text="@string/person_name" />
+
+                <TextView
+                    style="@style/contact_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="10dp"
+                    android:drawableStart="@drawable/ic_place_black_24dp"
+                    android:text="@string/location" />
+
+                <View style="@style/ViewBarHorizontal" />
+
+                <TextView
+                    style="@style/slogan_text"
+                    android:text="@string/slogan" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/networkpng"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:adjustViewBounds="true"
+            android:src="@drawable/network" />
+
+        <LinearLayout
+            android:id="@+id/button_bar"
+            style="@style/ButtonBar"
+            android:layout_above="@+id/networkpng">
+
+            <Button
+                android:id="@+id/CallButton"
+                style="@style/ContactButtons"
+                android:drawableTop="@drawable/ic_phone_black_24dp"
+                android:text="@string/call_button"
+                android:onClick="phonebutton"/>
+
+            <View style="@style/ViewBar" />
+
+            <Button
+                android:id="@+id/WebButton"
+                style="@style/ContactButtons"
+                android:drawableTop="@drawable/ic_public_black_24dp"
+                android:text="@string/web_button"
+                android:onClick="webbutton"/>
+
+            <View style="@style/ViewBar" />
+
+            <Button
+                android:id="@+id/EmailButton"
+                style="@style/ContactButtons"
+                android:drawableTop="@drawable/ic_email_black_24dp"
+                android:text="@string/email_button"
+                android:onClick="emailbutton"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>
